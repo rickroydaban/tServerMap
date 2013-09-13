@@ -9,12 +9,12 @@
     var map, marker;
 	
 	//retrieve the LatLng data from database and store them respectively below
-	var countryCapitalLat = 14.562316988438695;
-    var countryCapitalLng = 120.99243124999998;
+	var countryCapitalLat = 10.297691609104108;
+    var countryCapitalLng = 123.93024405517576;
 
 	//create a LatLng object to get a mappable coordinates
     var capitalCoords=new google.maps.LatLng(countryCapitalLat, countryCapitalLng);
-    var zoomLevel = 5;
+    var zoomLevel = 12;
 	
     function initialize(){
 	  //define map properties
@@ -53,6 +53,6 @@
 	long: <input type="text" id="longfield" value="120.99243124999998"/><br />
     <br />
   </div>
-  <div id="googleMap" style="width:500px;height:380px;"></div>
+  <div id="googleMap" style="width:400px;height:380px;"></div>
 </body>
 </html>
