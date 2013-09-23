@@ -57,6 +57,7 @@ if(sizeof($_GET)>0){
     }
 
     function updateMarker() {
+
       if(getMarkers()!=null){
         markers = getMarkers();
 
@@ -82,9 +83,11 @@ if(sizeof($_GET)>0){
           }
         })(marker, i));
 
-      }}
-      window.setTimeout("updateMarker();", speed);  
+      }
     }
+    
+    window.setTimeout("updateMarker();", speed);  
+  }
 
     window.setTimeout("updateMarker();", speed);
 
